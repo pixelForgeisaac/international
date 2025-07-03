@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: linear-gradient(90deg, #2c3e50, #3498db);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: #f20606;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f1c40f;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://via.placeholder.com/1920x400?text=Hero+Image') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: hsl(22, 98%, 51%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* General Section Styling */
+.section {
+    padding: 4rem 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.section-img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Section Colors */
+.about {
+    background: #17c2ec;
+}
+
+.admissions {
+    background: #dfe6e9;
+}
+
+.boarding {
+    background: #b2bec3;
+}
+
+.contact {
+    background: #636e72;
+    color: #fff;
+}
+
+.contact h2 {
+    color: #fff;
+}
+
+/* Contact Info */
+.contact-info p {
+    margin: 0.5rem 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-btn {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.3s;
+}
+
+.social-btn:hover {
+    transform: scale(1.05);
+}
+
+.whatsapp { background: #25D366; }
+.facebook { background: #3b5998; }
+.x { background: #000000; }
+.instagram { background: #C13584; }
+
+/* Footer */
+footer {
+    background: #fc9906;
+    color: #121111;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #2c3e50;
+        padding: 1rem;
+    }
+/* Responsive styles */
+@media (max-width: 1024px) {
+  section img {
+    max-width: 90%;
+    height: auto;
+  }
+  .program-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    font-size: 1.5rem;
+    padding: 1.5rem 1rem;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a {
+    margin: 10px 0;
+  }
+  section {
+    padding: 40px 10px;
+    font-size: 1.1rem;
+  }
+  .program-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    font-size: 1.1rem;
+    padding: 1rem 0.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  section {
+    padding: 20px 5px;
+    font-size: 1rem;
+  }
+  section img {
+    max-width: 100%;
+    border-radius: 6px;
+  }
+  footer {
+    font-size: 0.9rem;
+    padding: 10px 0;
+  }
+}
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-img {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+}
